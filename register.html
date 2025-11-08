@@ -39,7 +39,7 @@
 
   <div id="msg" class="msg" role="alert"></div>
 
-  <div class="small">Already have an account? <a class="link" href="login.html">Sign in</a></div>
+  <div class="small">Already have an account? <a class="link" href="index.html">Sign in</a></div>
 </div>
 
 <script>
@@ -102,7 +102,7 @@ btn.addEventListener('click', async () => {
     users.push({ email, uid, passHash: hash, created: Date.now() });
     saveUsers(users);
     showMessage('Account created! Redirecting to login...', 'success');
-    setTimeout(() => { window.location.href = 'login.html'; }, 1100);
+    setTimeout(() => { window.location.href = 'index.html'; }, 1100);
   } catch (e) {
     console.error(e);
     showMessage('Unexpected error, try again');
